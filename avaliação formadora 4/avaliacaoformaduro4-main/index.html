@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+    <body>
+        <div id="fundof">
+            <h1>Cadastro de usuário</h1>
+            <form id="formulario">
+                <div class="input">
+                    <label for="nome">Nome</label>
+                    <input type="text" placeholder="Nome completo" id="nome" required>
+                    <span class="error" id="erro-nome"></span>
+                </div>
+                <div class="input">
+                    <label for="date">Data de nascimento</label>
+                    <input type="date">
+                </div>
+                <div class="input">
+                    <div class="input">
+                        <p>Sexo</p>
+                    </div>
+                    <div class="input">
+                        <label for="M"></label><input type="radio" id="M" name="gen" value="M" checked>Masculino
+                    </div>
+                    <div class="input">
+                        <label for="F"></label><input type="radio" id="F" name="gen" value="F">Feminino
+                    </div>
+                </div>
+                <div class="input">
+                    <label for="nomemae">Nome materno</label>
+                    <input type="text" placeholder="Nome materno" id="nomeMaterno" required>
+                    <span class="error" id="erro-nomeMaterno"></span>
+                </div>
+
+                <div class="input">
+                    <label for="cpf">CPF</label>
+                    <input type="text" placeholder="CPF" id="cpf" required>
+                    <span class="error" id="erro-cpf"></span>
+                </div>
+                <div class="input">
+                    <label for="celular">Telefone celular</label>
+                    <input type="text" placeholder="Telefone celular" id="celular" required>
+                    <span class="error" id="erro-celular"></span>
+                </div>
+                <div class="input">
+                    <label for="telefone">Telefone Fixo</label>
+                    <input type="text" placeholder="Telefone fixo" id="telefoneFixo">
+                    <span class="error" id="erro-telefoneFixo"></span>
+                </div>
+                <div class="input">
+                    <label for="endereco">Endereço completo</label>
+                    <input type="text" placeholder="Endereço completo" id="enderecoCompleto" required>
+                    <span class="error" id="erro-enderecoCompleto"></span>
+                </div>
+                <div class="input">
+                    <label for="login">Login</label>
+                    <input type="text" placeholder="Login" id="login">
+                    <span class="error" id="erro-login"></span>
+                </div>
+                <div class="input">
+                    <label for="senha">Senha</label>
+                    <input type="text" placeholder="Senha" id="senha">
+                    <span class="error" id="erro-senha"></span>
+                </div>
+                <div>
+                    <input type="reset" value="Limpar" class="botoes">
+                    <input type="submit" value="Enviar" class="botoes">
+                </div>
+            </form>
+        </div>
+        <script src="script.js"></script>    
+    </body>
+</html>

@@ -1,0 +1,75 @@
+*{      /* configurações gerais para todos os elementos */ 
+    margin: 0;    /*margem inicial para todos */
+    padding: 0;   /* espaço interno para todos */
+}
+body{       /* corpo todo da pagina*/
+    width: 98vw;     /* largura de 98 % da viewport*/
+    height: 100vh;    /* altura de 100 % da viewport */
+    display: flex;    /* display flex box*/
+    flex-direction: column;  /* direcao de cima para baixo*/
+    align-items: center;     /* alinhamento ao centro*/
+	
+}
+h1{
+	padding: 10px;
+	text-shadow: 2px 2px 2px rgba(255, 0, 0, 0.397);
+}
+form{
+    display: flex;/*display flexbox*/
+    flex-direction: column; /* direcao de cima para baixo*/
+    justify-content: center; /*alinhamento ao centro*/
+    align-items: center; /*alinhamento ao centro*/
+
+}
+#fundof{
+	width: 80%; 
+	border: 2px solid black;
+	padding: 20px;
+	box-shadow: 2px 2px 2px #cccc;
+	border-radius: 20px;
+	font-weight: bolder;
+	text-shadow:2px 2px 2px rgba(60, 111, 124, 0.76);
+	background-image: url(./img/fundo.jfif);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: bottom left;
+	background-size:50% 50%;
+}
+form input{
+    width: 50%;  /*largura */
+    margin: 10px 0; /* margem*/
+    padding: 10px; /* espaços interno*/
+    border: 1px solid #000; /* borda */
+}
+.input{
+    width: 100%;  /*largura */
+    display: flex;  /*display flexbox*/
+    justify-content: space-between; /*tipo de organização dos elementos filhos*/
+    align-items: center; /*alinhamento ao centro*/
+}
+.botoes{
+	margin-right: 10px;
+	border-radius: 4px;
+	width: fit-content;
+	background-color: rgba(14, 170, 197, 0.39);
+	color: white;
+	border-color: rgba(0, 0, 0, 0.24);
+	font-weight:bolder;
+}
+.botoes:hover{
+	background-color: rgba(255, 217, 0, 0.678);
+	color: rgba(48, 17, 3, 0.596);
+}
+@media (max-width: 768px){ /*regra diferente para uma determinada situação*/ 
+	 /* como se fosse um se a largura maxima for 768 então aplica-se essas regras no form*/
+    #fundof{
+        width: 80%; /*largura */ 
+		
+    }
+}
+.error {
+	color: red;
+}
+.success {
+	color: green;
+}
